@@ -9,8 +9,11 @@ class AllTasks extends StatefulWidget {
 }
 
 class _AllTasksState extends State<AllTasks> {
+  void _addTask() {
+    print('test');
+  }
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(appBar: AppBar(title: Text('to do list'),), body: Center(child: Text('test'),), floatingActionButton: FloatingActionButton(onPressed: _addTask, tooltip: 'addTask', child: const Icon(Icons.add),),);
   }
 }
